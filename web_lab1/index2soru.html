@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DİKEY AÇILIR MENÜ</title>
+    <style>
+        /* Temel stil ayarları */
+        ul {
+            border: 1px solid #000;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            width: 200px;
+            background-color: #008080; /* Menü Arkaplan rengi */
+        }
+        li {
+            padding: 10px;
+            border: 1px solid #000;
+            background-color: #008080; /* Menü arkaplan rengi */
+            color: #000; /* Metin rengi */
+            font-weight: bold;
+            position: relative; /* Alt menülerin doğru pozisyon alması için */
+        }
+        li:hover {
+            font-weight: bold;
+            color: #e6db07; /* Fare üzerine geldiğinde metin rengi */
+            background-color: #7f8000; /* Fare üzerine geldiğinde arkaplan rengi */
+        }
+        /* Alt menülerin stilleri */
+        ul ul {
+            display: none; /* Başlangıçta alt menüleri gizle */
+            position: absolute;
+            top: 0;
+            left: 100%;
+            padding-left: 0;
+        }
+        li:hover ul {
+            display: block; /* Fare üzerine gelindiğinde alt menüyü göster */
+        }
+        ul ul li {
+            width: 200px; /* Alt menü genişliği */
+            background-color: #008080; /* Alt menü arkaplan rengi */
+        }
+        ul ul li:hover {
+            background-color: #7f8000; /* Alt menü fare ile üzerine gelince */
+        }
+        a {
+            color: black; /* Link metin rengi */
+            text-decoration: none; /* Link altı çizgiyi kaldırır */
+            display: block;
+        }
+        a:hover {
+            color: #e6db07; /* Link fare üzerine gelince metin rengi */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul class="ul">
+            <li><a href="http://www.omu.edu.tr/tr">Anasayfa</a></li>
+            <li><a href="https://bil-muhendislik.omu.edu.tr/tr">Hakkımızda</a>
+                <ul>
+                    <li><a href="https://bil-muhendislik.omu.edu.tr/tr/hakkimizda/yonetim">Bölümümüz</a></li>
+                    <li><a href="https://bil-muhendislik.omu.edu.tr/tr/hakkimizda/yonetim">Yönetim</a></li>
+                    <li><a href="https://bil-muhendislik.omu.edu.tr/tr/hakkimizda/komisyonlar">Komisyon</a></li>
+                </ul>
+            </li>
+            <li><a href="https://bil-muhendislik.omu.edu.tr/tr/hakkimizda/komisyonlar">Personel</a>
+                <ul>
+                    <li><a href="https://bil-muhendislik.omu.edu.tr/tr/hakkimizda/komisyonlar/ogretim-uyeleri">Öğretim Üyeleri</a></li>
+                    <li><a href="https://bil-muhendislik.omu.edu.tr/tr/hakkimizda/komisyonlar/arastirma-gorevlileri">Araştırma Görevlileri</a></li>
+                </ul>
+            </li>
+            <li><a href="https://bil-muhendislik.omu.edu.tr/tr/hakkimizda/komisyonlar/egitim">Eğitim</a>
+                <ul>
+                    <li><a href="https://bil-muhendislik.omu.edu.tr/tr/hakkimizda/komisyonlar/lisans">Lisans</a></li>
+                    <li><a href="https://bil-muhendislik.omu.edu.tr/tr/hakkimizda/komisyonlar/yuksek-lisans">Yüksek Lisans</a></li>
+                    <li><a href="https://bil-muhendislik.omu.edu.tr/tr/hakkimizda/komisyonlar/doktora">Doktora</a></li>
+                    <li><a href="https://bil-muhendislik.omu.edu.tr/tr/hakkimizda/komisyonlar/laboratuvarlar">Laboratuvarlar</a></li>
+                </ul>
+            </li>
+            <li><a href="https://bil-muhendislik.omu.edu.tr/tr/hakkimizda/komisyonlar/iletisim">İletişim</a></li>
+        </ul>
+    </div>
+</body>
+</html>
